@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3A03852F1F720B990038B353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03852E1F720B990038B353 /* AppDelegate.swift */; };
-		3A0385311F720B9A0038B353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0385301F720B9A0038B353 /* ViewController.swift */; };
 		3A0385341F720B9A0038B353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0385321F720B9A0038B353 /* Main.storyboard */; };
 		3A0385361F720B9B0038B353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0385351F720B9B0038B353 /* Assets.xcassets */; };
 		3A0385391F720B9B0038B353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0385371F720B9B0038B353 /* LaunchScreen.storyboard */; };
+		3A0385421F72135E0038B353 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0385411F72135E0038B353 /* WebKit.framework */; };
+		3AAC5A4A1F721A3300328E24 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC5A491F721A3300328E24 /* QuoteViewController.swift */; };
+		3AF8D2171F7236180012A505 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8D2161F7236180012A505 /* Quote.swift */; };
+		3AF8D2191F7237B60012A505 /* QuoteDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8D2181F7237B60012A505 /* QuoteDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A03852B1F720B990038B353 /* Founding Fathers Quote Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Founding Fathers Quote Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A03852E1F720B990038B353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A0385301F720B9A0038B353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A0385331F720B9A0038B353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A0385351F720B9B0038B353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0385381F720B9B0038B353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A03853A1F720B9B0038B353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0385411F72135E0038B353 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3AAC5A491F721A3300328E24 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		3AF8D2161F7236180012A505 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		3AF8D2181F7237B60012A505 /* QuoteDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0385421F72135E0038B353 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				3A03852D1F720B990038B353 /* Founding Fathers Quote Book */,
 				3A03852C1F720B990038B353 /* Products */,
+				3A0385401F72135E0038B353 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,56 @@
 		3A03852D1F720B990038B353 /* Founding Fathers Quote Book */ = {
 			isa = PBXGroup;
 			children = (
-				3A03852E1F720B990038B353 /* AppDelegate.swift */,
-				3A0385301F720B9A0038B353 /* ViewController.swift */,
-				3A0385321F720B9A0038B353 /* Main.storyboard */,
-				3A0385351F720B9B0038B353 /* Assets.xcassets */,
-				3A0385371F720B9B0038B353 /* LaunchScreen.storyboard */,
-				3A03853A1F720B9B0038B353 /* Info.plist */,
+				3AF8D2121F7235480012A505 /* Model */,
+				3AF8D2131F72356E0012A505 /* View */,
+				3AF8D2141F7235750012A505 /* Controller */,
+				3AF8D2151F7235A10012A505 /* Supporting Files */,
 			);
 			path = "Founding Fathers Quote Book";
+			sourceTree = "<group>";
+		};
+		3A0385401F72135E0038B353 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0385411F72135E0038B353 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AF8D2121F7235480012A505 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8D2161F7236180012A505 /* Quote.swift */,
+				3AF8D2181F7237B60012A505 /* QuoteDeck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AF8D2131F72356E0012A505 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A0385321F720B9A0038B353 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AF8D2141F7235750012A505 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC5A491F721A3300328E24 /* QuoteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AF8D2151F7235A10012A505 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A03852E1F720B990038B353 /* AppDelegate.swift */,
+				3A0385371F720B9B0038B353 /* LaunchScreen.storyboard */,
+				3A0385351F720B9B0038B353 /* Assets.xcassets */,
+				3A03853A1F720B9B0038B353 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0385311F720B9A0038B353 /* ViewController.swift in Sources */,
+				3AAC5A4A1F721A3300328E24 /* QuoteViewController.swift in Sources */,
+				3AF8D2171F7236180012A505 /* Quote.swift in Sources */,
 				3A03852F1F720B990038B353 /* AppDelegate.swift in Sources */,
+				3AF8D2191F7237B60012A505 /* QuoteDeck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
